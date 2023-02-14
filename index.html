@@ -3,33 +3,41 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>The Komputer Store</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    
 </head>
 <body>
     <header>Komputer Store</header>
 
+    <!-- <div id="bank_box"> -->
     <h3>Aris Kardasis</h3>
-    <p>Balance: 300</p>
-    <button id="loan">Get a loan</button>
+    <span>Balance: </span>
+    <span id="balance">300€</span>
+    <span id="loanDue"></span><br>
+    <button id="getLoan">Get a loan</button>
+    <!-- </div> -->
 
     <h3>Work</h3>
-    <p>Pay: 300</p>
-    <button id="deposit">Bank</button>
+    <span>Pay: </span>
+    <span id="savingsFromWork">0€</span><br>
+    <button id="deposit">Deposit</button>
     <button id="work">Work</button>
+    <button id="payLoan" hidden = "hidden">Pay Loan</button>
 
     <h3>Laptops</h3>
-    <select name = "laptops" id="Laptops"></select>
-    <div>Features:</div>
-    <p>Description</p>
+    <select name = "laptops" id="laptops"></select>
+    <p>Features:</p>
+    <blockquote id="features"></blockquote>
 
-    <h2>Laptop Name</h2>
-    <p>Description</p>
-    <p>Money</p>
+    <h2 id = "laptopName"></h2>
+    <p id = "description"></p>
+    <p id = "price"></p>
+    <img id = "image" alt="Image of laptop"></img>
     <button id="buy">BUY NOW</button>
+
+    <script src='app.js'></script>
 
 </body>
 </html>
