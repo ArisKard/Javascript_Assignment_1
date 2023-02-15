@@ -1,9 +1,115 @@
-/* #bank_box{
-  display:grid;
+header{
+    font-size: 40px;
+    background-color: grey
 }
 
-#loan{
-    background-color: turquoise;
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap:20px;
+    font-size: 20px;
+}
+
+.bank{
+    display:grid;
+    background-color: whitesmoke;
+}
+
+.work{
+    display:grid;
+    background-color: whitesmoke;
+}
+
+.laptop-selection{
+    background-color: whitesmoke;
+}
+
+.laptop-info{
+    position: relative; left:554px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: whitesmoke;
+    grid-column:1/4;
+}
+
+#image{
+    position:relative; top: -265px; left: 80px
+}
+
+#price{
+    position:relative; left: 45px;
+}
+
+#buy{
+    block-size: 40px;
+    inline-size: 130px;
+    background-color: rgb(26, 100, 150);
+    border-radius: 8px;
     border: none;
-    padding: 15px 32px
-} */
+    color: white;
+    padding: 5px 11px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#getLoan{
+    background-color: turquoise;
+    border-radius: 8px;
+    border: none;
+    color: black;
+    padding: 5px 11px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#deposit{
+    background-color: yellow;
+    border-radius: 8px;
+    border: none;
+    color: black;
+    padding: 5px 11px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#work{
+    background-color: cornflowerblue;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 5px 11px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#payLoan{
+    background-color: #097969;
+    border-radius: 8px;
+    border: none;
+    color: black;
+    padding: 5px 11px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+

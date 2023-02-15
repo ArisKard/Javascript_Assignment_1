@@ -10,32 +10,46 @@
 </head>
 <body>
     <header>Komputer Store</header>
+    
+    <main>
 
-    <!-- <div id="bank_box"> -->
+    <!-- the bank section -->
+    <div class="bank">
     <h3>Aris Kardasis</h3>
     <span>Balance: </span>
     <span id="balance">300€</span>
-    <span id="loanDue"></span><br>
+    <span id="loanDue"></span><br><br>
     <button id="getLoan">Get a loan</button>
-    <!-- </div> -->
+    </div>
 
+    <!-- the work section -->
+    <div class = "work">
     <h3>Work</h3>
     <span>Pay: </span>
-    <span id="savingsFromWork">0€</span><br>
+    <span id="savingsFromWork">0€</span><br><br>
     <button id="deposit">Deposit</button>
     <button id="work">Work</button>
     <button id="payLoan" hidden = "hidden">Pay Loan</button>
+    </div>
 
+    <!-- the laptop selection area -->
+    <div class = "laptop-selection">
     <h3>Laptops</h3>
     <select name = "laptops" id="laptops"></select>
     <p>Features:</p>
     <blockquote id="features"></blockquote>
+    </div>
 
+    <!-- the laptop info area -->
+    <div class = "laptop-info">
     <h2 id = "laptopName"></h2>
+    <b><p id = "price"></p></b>
     <p id = "description"></p>
-    <p id = "price"></p>
-    <img id = "image" alt="Image of laptop"></img>
     <button id="buy">BUY NOW</button>
+    </div>
+    <img id = "image" alt="Image of laptop" width="350px" height="280px"></img>
+
+    </main>
 
     <script src='app.js'></script>
 
